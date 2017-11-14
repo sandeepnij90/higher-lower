@@ -1,0 +1,64 @@
+@import 'variables';
+
+body {
+  background-color: $green;
+  margin: 0;
+}
+
+#appContainer {
+  .wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  nav {
+    background-color: $dark-green;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 70px;
+    color: #ffffff;
+
+    h1 {
+      margin: 0;
+      float: left;
+      font-size: 30px;
+      padding-top: 15px;
+    }
+
+    ul {
+      float: right;
+      list-style: none;
+      margin: 0;
+
+      a {
+        display: inline-block;
+        width: 70px;
+        font-size: 30px;
+        height: 70px;
+        padding-top: 15px;
+        text-align: center;
+        color: #ffffff;
+
+        &.active {
+          background-color: $green;
+        }
+      }
+    }
+  }
+
+  .settings {
+    .inputLives {
+      .input-container {
+        display: inline-block;
+        padding-top: 10px;
+      }
+
+      input {
+        height: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
